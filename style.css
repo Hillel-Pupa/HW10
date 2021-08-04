@@ -28,6 +28,7 @@ h1 {
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
+
 h5 {
     font-size: 18px;
     font-weight: bold;
@@ -37,6 +38,11 @@ h5 {
 h2 {
     margin-bottom: 56px;
     font-size: 36px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 a:hover {
