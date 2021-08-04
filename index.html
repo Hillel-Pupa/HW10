@@ -23,116 +23,120 @@
         <title>Document</title>
     </head>
     <body>
-        <header class="header">
-            <div class="logo">
-                <svg
-                    width="26"
-                    height="19"
-                    viewBox="0 0 26 19"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M20.605 8.05005C20.605 7.61505 20.75 7.18005 20.75 6.60005C20.75 3.41005 18.14 0.800049 14.95 0.800049C12.63 0.800049 10.745 2.10505 9.73001 3.99005C9.44001 3.84505 8.86001 3.70005 8.42501 3.70005C6.39501 3.70005 4.80001 5.29505 4.80001 7.32505C4.80001 7.61505 4.80001 7.90505 4.94501 8.05005C2.33501 8.48505 0.450012 10.515 0.450012 13.125C0.450012 15.88 2.77001 18.2 5.52501 18.2H20.025C22.78 18.2 25.1 15.88 25.1 13.125C25.1 10.515 23.215 8.34005 20.605 8.05005Z"
-                        fill="white"
-                    />
-                </svg>
-                <strong class="logo__text">cloudbudget</strong>
-            </div>
-            <nav class="nav__top">
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                </label>
-                <ul class="main__menu menu__box">
-                    <li><a class="menu__item" href="#">overview</a></li>
-                    <li><a class="menu__item" href="#">features</a></li>
-                    <li><a class="menu__item" href="#">technology</a></li>
-                    <li><a class="menu__item" href="#">contact</a></li>
-                    <li><a class="menu__item" href="#">sign up</a></li>
-                </ul>
-            </nav>
-            <form>
-                <p><input class="login" type="button" value="login" /></p>
-            </form>
-        </header>
-        <main>
-            <section class="banner flex__container container">
-                <div class="banner__content">
-                    <h1>CLOUDBUDGET</h1>
-                    <div class="banner__text">
-                        <p>
-                            Cloud budget management for everyone. Only <br />
-                            €69.95 a Month After a 7 Day Trial of <br />
-                            Up to €4.99
-                        </p>
-                    </div>
-                    <form>
-                        <p>
-                            <input
-                                class="sign__up"
-                                type="button"
-                                value="sign up"
-                            />
-                        </p>
-                    </form>
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo">
+                    <svg
+                        width="26"
+                        height="19"
+                        viewBox="0 0 26 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M20.605 8.05005C20.605 7.61505 20.75 7.18005 20.75 6.60005C20.75 3.41005 18.14 0.800049 14.95 0.800049C12.63 0.800049 10.745 2.10505 9.73001 3.99005C9.44001 3.84505 8.86001 3.70005 8.42501 3.70005C6.39501 3.70005 4.80001 5.29505 4.80001 7.32505C4.80001 7.61505 4.80001 7.90505 4.94501 8.05005C2.33501 8.48505 0.450012 10.515 0.450012 13.125C0.450012 15.88 2.77001 18.2 5.52501 18.2H20.025C22.78 18.2 25.1 15.88 25.1 13.125C25.1 10.515 23.215 8.34005 20.605 8.05005Z"
+                            fill="white"
+                        />
+                    </svg>
+                    <strong class="logo__text">cloudbudget</strong>
                 </div>
-            </section>
-            <section class="features flex__container container">
-                <h2>Features</h2>
-                <div class="features__content">
-                    <div class="card">
-                        <img src="images/Bg.png" alt="money" />
-                        <div class="card__content">
-                            <span class="card__title"
-                                >Supports All Currencies and Cards</span
-                            >
-                            <div class="card__text">
+                <nav class="nav__top">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="main__menu menu__box">
+                        <p>
+                            <li><a class="menu__item" href="#">overview</a></li>
+                        </p>
+                        <p>
+                            <li><a class="menu__item" href="#">features</a></li>
+                        </p>
+                        <p>
+                            <li>
+                                <a class="menu__item" href="#">technology</a>
+                            </li>
+                        </p>
+                        <p>
+                            <li><a class="menu__item" href="#">contact</a></li>
+                        </p>
+                        <p>
+                            <li><a class="menu__item" href="#">sign up</a></li>
+                        </p>
+                    </ul>
+                </nav>
+
+                <button class="login">login</button>
+            </header>
+            <main class="content">
+                <section class="banner flex__container container">
+                    <div class="banner__content">
+                        <h1>CLOUDBUDGET</h1>
+                        <div class="banner__text">
+                            <p>
+                                Cloud budget management for everyone. Only
+                                <br />
+                                €69.95 a Month After a 7 Day Trial of <br />
+                                Up to €4.99
+                            </p>
+                        </div>
+                        <button class="sign__up">sign up</button>
+                    </div>
+                </section>
+                <section class="features flex__container container">
+                    <h2>Features</h2>
+                    <div class="features__content">
+                        <div class="card">
+                            <img src="images/Bg.png" alt="money" />
+                            <div class="card__content">
+                                <h4 class="card__title">
+                                    Supports All Currencies and Cards
+                                </h4>
+
                                 <p>
                                     We support all popular currencies and is
                                     fully customizable to add
                                 </p>
+
+                                <p><a href="#">Read More</a></p>
                             </div>
-                            <p><a href="#">Read More</a></p>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/Bg1.png" alt="hands" />
-                        <div class="card__content">
-                            <span class="card__title"
-                                >Manage your expenses on the go</span
-                            >
-                            <div class="card__text">
+                        <div class="card">
+                            <img src="images/Bg1.png" alt="hands" />
+                            <div class="card__content">
+                                <h4 class="card__title">
+                                    Manage your expenses on the go
+                                </h4>
+
                                 <p>
                                     You can access your account from anywhere in
                                     the world on any device
                                 </p>
+
+                                <p><a href="#">Read More</a></p>
                             </div>
-                            <p><a href="#">Read More</a></p>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/Bg2.png" alt="room" />
-                        <div class="card__content">
-                            <span class="card__title"
-                                >Cloud Budget Management Software</span
-                            >
-                            <div class="card__text">
+                        <div class="card">
+                            <img src="images/Bg2.png" alt="room" />
+                            <div class="card__content">
+                                <h4 class="card__title">
+                                    Cloud Budget Management Software
+                                </h4>
+
                                 <p>
                                     Our software is made so you can access and
                                     manage your budget
                                 </p>
+
+                                <p><a href="#">Read More</a></p>
                             </div>
-                            <p><a href="#">Read More</a></p>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="technology container">
-                <h2>Technonlogy</h2>
-                <div class="technology__content flex__container">
-                    <div class="cloud tech__block">
-                        <div class="info__text">
+                </section>
+                <section class="technology container">
+                    <h2>Technonlogy</h2>
+                    <div class="technology__content flex__container">
+                        <div class="cloud tech__block">
                             <span class="number">01</span>
                             <svg
                                 class="tech__img"
@@ -150,16 +154,14 @@
                                 />
                             </svg>
                             <div class="tech__text">
-                                <span class="tech__title">Cloud Storage</span>
+                                <h4 class="tech__title">Cloud Storage</h4>
                                 <p>
                                     Access your account from anywhere in the
                                     world on any device
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="secure tech__block">
-                        <div class="info__text">
+                        <div class="secure tech__block">
                             <span class="number">02</span>
                             <svg
                                 class="tech__img"
@@ -181,16 +183,14 @@
                                 />
                             </svg>
                             <div class="tech__text">
-                                <span class="tech__title">Secure</span>
+                                <h4 class="tech__title">Secure</h4>
                                 <p>
                                     All your information is stored on secure
                                     cloud servers
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="pdf tech__block">
-                        <div class="info__text">
+                        <div class="pdf tech__block">
                             <span class="number">03</span>
                             <svg
                                 class="tech__img"
@@ -205,15 +205,13 @@
                                 />
                             </svg>
                             <div class="tech__text">
-                                <span class="tech__title">PDF Download</span>
+                                <h4 class="tech__title">PDF Download</h4>
                                 <p>
                                     Download any of your reports in PDF format
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="csv tech__block">
-                        <div class="info__text">
+                        <div class="csv tech__block">
                             <span class="number">04</span>
                             <svg
                                 class="tech__img"
@@ -234,7 +232,7 @@
                                 />
                             </svg>
                             <div class="tech__text">
-                                <span class="tech__title">CSV Download</span>
+                                <h4 class="tech__title">CSV Download</h4>
                                 <p>
                                     All your information is stored on secure
                                     cloud servers
@@ -242,47 +240,52 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <section class="footer__top flex__container container">
-                <nav class="address">
-                    <span class="nav__title">Address</span>
-                    <p>
-                        Pipang Ltd, Griva Digeni, <br />
-                        81-83 Jacovides Tower, 1st Floor <br />
-                        1090 Picosia USA
-                    </p>
-                </nav>
-                <nav class="services">
-                    <span class="nav__title">Services</span>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__top flex__container container">
+                    <nav class="address">
+                        <h5 class="nav__title">Address</h5>
+                        <p>
+                            Pipang Ltd, Griva Digeni, <br />
+                            81-83 Jacovides Tower, 1st Floor <br />
+                            1090 Picosia USA
+                        </p>
+                    </nav>
+                    <nav class="services">
+                        <h5 class="nav__title">Services</h5>
 
-                    <ul>
-                        <li><a href="">overview</a></li>
-                        <li><a href="">features</a></li>
-                        <li><a href="">technology</a></li>
-                        <li><a href="">Terms & Conditions</a></li>
-                        <li><a href="">Privecy</a></li>
-                    </ul>
-                </nav>
-                <nav class="get__in__touch">
-                    <span class="nav__title">Get in Touch</span>
-                    <ul>
-                        <li><a href="#">info@cloudbudget.com</a></li>
-                        <li><a href="#">+1 844-721-7120</a></li>
-                    </ul>
-                    <div class="social">
-                        <a href="#_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </nav>
-                <nav class="we__support">
-                    <span class="nav__title">We Support</span>
-                    <img src="images/secure-p.png" alt="cards" />
-                </nav>
-            </section>
-        </footer>
+                        <ul>
+                            <li><a href="">overview</a></li>
+                            <li><a href="">features</a></li>
+                            <li><a href="">technology</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Privecy</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="get__in__touch">
+                        <h5 class="nav__title">Get in Touch</h5>
+                        <ul>
+                            <li><a href="#">info@cloudbudget.com</a></li>
+                            <li><a href="#">+1 844-721-7120</a></li>
+                        </ul>
+                        <div class="social">
+                            <a href="#_blank"
+                                ><i class="fab fa-facebook-f"></i
+                            ></a>
+                            <a href="#_blank"
+                                ><i class="fab fa-linkedin-in"></i
+                            ></a>
+                            <a href="#_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </nav>
+                    <nav class="we__support">
+                        <h5 class="nav__title">We Support</h5>
+                        <img src="images/secure-p.png" alt="cards" />
+                    </nav>
+                </div>
+                <p>Copyright 2018 CloudBudget</p>
+            </footer>
+        </div>
     </body>
 </html>
