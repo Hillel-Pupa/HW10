@@ -29,7 +29,7 @@ h1 {
     text-transform: uppercase;
 }
 
-h5 {
+.nav__title {
     font-size: 18px;
     font-weight: bold;
     margin: 18px 0;
