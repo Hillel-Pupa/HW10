@@ -1,5 +1,6 @@
 :root {
     --color-primary: rgba(237, 76, 92, 1);
+    --color-secondary: #fff;
 }
 
 * {
@@ -17,10 +18,13 @@ img {
     width: 100%;
 }
 
+body a {
+    color: inherit;
+    text-decoration: none;
+}
+
 body {
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 600;
+    font: 600 18px "Lato", sans-serif;
     background-color: #fafafa;
 }
 
@@ -63,7 +67,7 @@ a:hover {
     display: flex;
     justify-content: center;
     padding-top: 24px;
-    color: white;
+    color: var(--color-secondary);
 }
 
 .menu__btn {
@@ -167,7 +171,7 @@ a:hover {
 
 .sign__up {
     margin: 15px;
-    background: #ffffff;
+    background: var(--color-secondary);
     border-radius: 6px;
     border: none;
     padding: 17px 40px;
@@ -194,16 +198,12 @@ a:hover {
 
     background-size: cover;
     min-height: 100vh;
-    color: white;
+    color: var(--color-secondary);
     justify-content: center;
 }
 
 .banner__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    text-align: center;
 }
 
 .banner__text {
@@ -219,7 +219,6 @@ a:hover {
 
 .card {
     text-align: center;
-    position: relative;
     padding-bottom: 100px;
     margin: 15px;
 }
@@ -230,15 +229,16 @@ a:hover {
 }
 
 .card__content {
-    background: #ffffff;
+    background: var(--color-secondary);
     box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
     border-radius: 8px;
     bottom: 0;
-    position: absolute;
-    margin: 0 30px;
+    position: relative;
+    margin: -60px 30px;
     padding: 30px;
     font-size: 12px;
     line-height: 18px;
+    z-index: 1;
 }
 
 .card__content p {
@@ -260,21 +260,17 @@ a:hover {
     font-weight: bold;
 }
 
-body a {
-    color: inherit;
-    text-decoration: none;
-}
-
 .technology {
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--color-secondary);
     text-align: center;
     padding: 30px;
 }
 
 .technology__content {
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .tech__block {
@@ -346,6 +342,11 @@ body a {
     padding: 80px;
 }
 
+.copyright {
+    display: block;
+    margin-top: 30px;
+}
+
 @media (min-width: 768px) {
     h1 {
         font-weight: 700;
@@ -358,7 +359,6 @@ body a {
     }
 
     .header {
-        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: baseline;
@@ -366,7 +366,6 @@ body a {
 
     .nav__top {
         display: flex;
-        flex-direction: row;
     }
 
     .menu__item:hover {
@@ -375,10 +374,10 @@ body a {
 
     .login {
         display: block;
-        border: 1px solid #ffffff;
+        border: 1px solid var(--color-secondary);
         box-sizing: border-box;
         border-radius: 6px;
-        color: white;
+        color: var(--color-secondary);
         padding: 15px 36px;
         background-color: transparent;
         text-transform: uppercase;
@@ -405,13 +404,17 @@ body a {
     }
 
     .menu__item {
-        color: white;
+        color: var(--color-secondary);
         padding: 0;
         font-size: 10px;
     }
 
     .menu__box li {
         padding: 0 15px;
+    }
+
+    #menu__toggle {
+        display: none;
     }
 
     .banner__text {
@@ -445,6 +448,10 @@ body a {
     .footer__top nav {
         max-width: 25%;
     }
+
+    .copyright {
+        margin-top: 100px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -454,5 +461,17 @@ body a {
     .features__content {
         flex-direction: row;
         display: flex;
+    }
+
+    .tech__block {
+        width: 25%;
+    }
+
+    .menu__item {
+        font-size: 14px;
+    }
+
+    .card {
+        width: calc(33.33% - 30px);
     }
 }
