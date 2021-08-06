@@ -346,6 +346,7 @@ a:hover {
 .copyright {
     display: block;
     margin-top: 30px;
+    font-size: 12px;
 }
 
 @media (min-width: 768px) {
@@ -444,7 +445,7 @@ a:hover {
 
     .footer__top {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .footer__top nav {
